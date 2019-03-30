@@ -1,0 +1,29 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+#数据连接,
+#驱动是6.0以上的写法,url中需要指定时区serverTimezone
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloud_sell
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    #redis配置
+  redis:
+    port: 6379
+    host: 127.0.0.1
+    #项目名称
+  application:
+    name: order
+#服务器访问路径前缀
+#server:
+#  servlet:
+#    context-path: /sell
+#服务端口
+server:
+  port: 9080
