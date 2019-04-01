@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>product</artifactId>
+        <groupId>com.lengke</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>controller</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.lengke</groupId>
+            <artifactId>server</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lengke</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.lengke.ClientApplication</mainClass>
+                    <!--SpringBoot工程打包编译时，会生成两种jar包，一种是普通的jar，另一种是可执行jar.
+                    普通的jar先生成，可执行jar后生成，造成可执行jar会覆盖普通的jar,而project工程无法依赖可执行jar,所以会报XXX不存在的错-->
+                    <classifier>exec</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
