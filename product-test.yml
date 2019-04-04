@@ -1,5 +1,5 @@
 #开发环境
-env: test111
+env: test
 #eureka
 eureka:
   client:
