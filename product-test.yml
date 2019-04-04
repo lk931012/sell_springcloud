@@ -16,6 +16,6 @@ spring:
     show-sql: true
   #redis配置
   redis:
-    port: 6379
+    port: 637955
     host: 127.0.0.1
 
