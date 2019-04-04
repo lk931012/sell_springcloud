@@ -25,4 +25,4 @@ spring:
 #server:
 #  servlet:
 #    context-path: /sell
-env: test
+
