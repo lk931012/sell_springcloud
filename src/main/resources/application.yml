@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lk931012/sell_springcloud.git
+          username: 939804031@qq.com
+          password: lengke931012
+          basedir: E:/config-repostory/sell/product
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8088
