@@ -1,4 +1,11 @@
-#数据连接
+#开发环境
+env: dev
+#eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#数据连接,
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
