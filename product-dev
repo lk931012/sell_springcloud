@@ -25,4 +25,4 @@ spring:
 #server:
 #  servlet:
 #    context-path: /sell
-#哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+evn: dev
