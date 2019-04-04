@@ -1,3 +1,9 @@
+#开发环境
+#eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 #数据连接,
 spring:
   datasource:
