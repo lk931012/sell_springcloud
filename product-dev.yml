@@ -1,5 +1,5 @@
 #开发环境
-env: dev222
+env: dev2222
 #eureka
 eureka:
   client:
