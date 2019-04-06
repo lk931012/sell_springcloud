@@ -1,0 +1,19 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8082
+#config配置
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        # * 细节：如果使用这种方式 uri可以不写,但是因为访问顺序的原因eureka的配置不能放在远程仓库,必须写在这个配置文件里
+        service-id: CONFIG  #通过eureka服务找到config,
+      #uri: http://localhost:8088   #访问的服务config, 如果使用这种方式,service-id可以不用写，但是启动会报一个错,但不影响结果，目前还没有找到解决方案
+      profile: dev  #{label}/{name}-{profiles}.yml 映射路径中的profiles,   name默认当前项目名称
+      label: config-rep   #远端分支
+  application:
+    name: order
