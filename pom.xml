@@ -17,6 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <product-common.version>0.0.1-SNAPSHOT</product-common.version>
     </properties>
 
 
@@ -71,10 +72,16 @@
             <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
 
-        <!--RabbitMQ-->
+        <!--RabbitMQ 包含了spring-cloud-starter-stream-rabbit-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.lengke</groupId>
+            <artifactId>product-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
     </dependencies>
