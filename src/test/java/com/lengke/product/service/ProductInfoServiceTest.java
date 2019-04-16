@@ -2,7 +2,6 @@ package com.lengke.product.service;
 
 import com.lengke.product.common.utils.RandomID;
 import com.lengke.product.controller.ProductController;
-import com.lengke.product.entity.ProductInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

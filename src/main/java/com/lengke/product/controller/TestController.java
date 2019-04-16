@@ -1,6 +1,6 @@
 package com.lengke.product.controller;
 
-import com.lengke.product.entity.ProductInfo;
+import com.lengke.entity.ProductInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

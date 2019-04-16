@@ -2,6 +2,7 @@
 package com.lengke.product.service.impl;
 
 
+import com.lengke.entity.ProductInfo;
 import com.lengke.product.common.enums.ExceptionEnum;
 import com.lengke.product.common.enums.OrderPaymentStatusEnum;
 import com.lengke.product.common.enums.OrderStatusEnum;
@@ -10,7 +11,6 @@ import com.lengke.product.common.utils.RandomID;
 import com.lengke.product.controller.ProductController;
 import com.lengke.product.entity.OrderDetail;
 import com.lengke.product.entity.OrderMaster;
-import com.lengke.product.entity.ProductInfo;
 import com.lengke.product.object.dto.OrderDTO;
 import com.lengke.product.repostory.OrderDetailRepostory;
 import com.lengke.product.repostory.OrderMasterRepostory;
