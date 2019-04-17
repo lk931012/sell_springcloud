@@ -19,8 +19,8 @@ public class StreamMessageController {
     @Autowired
     private Source source;
 //    目前自定义接口自动注入会报错
-    @Autowired
-    private StreamOutput streamOutput;
+/*    @Autowired
+    private StreamOutput streamOutput;*/
 
     @GetMapping("/stream/send")
     public void send(){

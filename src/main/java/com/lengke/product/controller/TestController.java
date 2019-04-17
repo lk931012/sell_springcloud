@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date : 2019/3/26 01:27
  */
 @RestController
-@RequestMapping("test")
+@RequestMapping("/test")
 public class TestController {
 
     @Autowired
@@ -25,5 +25,10 @@ public class TestController {
     @GetMapping("/get")
     public ProductInfo get(String id){
         return productController.findById(id);
+    }
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello";
     }
 }
