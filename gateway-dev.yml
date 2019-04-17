@@ -4,3 +4,6 @@ zuul:
     user: /myUser/**
     #忽略全部敏感头(所有服务都可以传递头信息,cookies等.)
   sensitive-headers:
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
