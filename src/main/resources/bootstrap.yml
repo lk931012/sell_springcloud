@@ -1,0 +1,24 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8083
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
+      label: config-rep
+    stream:
+      binders:
+        input:
+          group: gateway
+          content-Type: application/json
+  application:
+    name: gateway
+zuul:
+  routes:
+    order: /myOrder/**
