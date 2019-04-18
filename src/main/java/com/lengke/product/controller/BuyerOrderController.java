@@ -29,7 +29,7 @@ import java.util.Map;
  * @Date : 2019/3/11 02:47
  */
 @RestController
-@RequestMapping("/buyer/order")
+@RequestMapping("/buyer")
 public class BuyerOrderController {
 
     @Autowired
