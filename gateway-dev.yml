@@ -2,6 +2,7 @@ zuul:
   routes:
     order: /myOrder/**
     user: /myUser/**
+    view: /myView/**
     #忽略全部敏感头(所有服务都可以传递头信息,cookies等.)
   sensitive-headers:
 ribbon:
